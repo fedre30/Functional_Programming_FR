@@ -5,6 +5,10 @@ Documentation sur la programmation fonctionnelle et l'Observable en Javascript
 
 ## Concepts de base
 
+### Les fonctions pures 
+
+### Les fonctions de premier niveau
+
 ### Flux de données
 
 ### La transparence des réferences
