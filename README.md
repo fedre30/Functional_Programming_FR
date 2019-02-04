@@ -20,7 +20,7 @@ Voici un tableau qui résume les ddiférences des deux approches face au même �
 | Changement d'état | Important            |    Inéxistant                   |
 | L'ordre d'execution     | Important           |   Peu important                  |
 | Fonctionnalités principales utilisées pour le flux de données  | Boucles, conditionnels et appels de fonctions (méthodes)            |    Appels de fonctions dont des fonctions recursives                   |
-| Premier choix pour la manipulation | Les instances des structures ou des classes            |    Les fonctions qui sont utilisées comme des objets de première catégorie et les collections de données                   |
+| Premier choix pour la manipulation de toute entité | Les instances des structures ou des classes            |    Les fonctions qui sont utilisées comme des objets de première catégorie et les collections de données                   |
 
 
 ## Concepts de base
