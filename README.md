@@ -12,7 +12,7 @@ La **programmation fonctionnelle** a été crée pour avoir une approche fonctio
 
 Alors que la **programmation impérative** a le but de décrire à la machine toutes les étapes pour pourvoir atteindre un certain résultat, ce qui est typique de toute *programmation algorighmique*.
 
-Voici un tableau qui résume les ddiférences des deux approches face au même élement.
+Voici un tableau qui résume les différences des deux approches face au même élement.
 
 | Proprieté     | Approche impérative | Approche fonctionnelle  |
 | ------------- |:-------------------:| -----------------------:|
@@ -57,7 +57,14 @@ calculateArea(10, PI); // returns 314.0
 PI est maintenant un paramètre, donc le nombre de valeurs qui composent le résultat et le nombre de paramètre est bien le même.
 
 
-### Les fonctions de premier niveau
+### Les fonctions de premier ordre
+
+Les fonctions de premier ordre sont des fonctions qui peuvent:
+
+- prendre une ou plusieurs fonctions comme paramètre
+- avoir une fonction comme résultat
+
+Les fonctions introduites en ES6 **Map**, **Filter** et **Reduce** sont des bons exemples de fonctions de premier ordre.
 
 ### Flux de données
 
