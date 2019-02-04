@@ -8,16 +8,19 @@ Documentation sur la programmation fonctionnelle et l'Observable en Javascript
 
 ### Programmation fonctionnelle vs Programmation impérative
 
+La **programmation fonctionnelle** a été crée pour avoir une approche fonctionnelle pure dans la résolutions des problèmes, ce qui la rend une forme de *programmation déclarative*.
+
+Alors que la **programmation impérative** a le but de décrire à la machine toutes les étapes pour pourvoir atteindre un certain résultat, ce qui est typique de toute *programmation algorighmique*.
+
+Voici un tableau qui résume les ddiférences des deux approches face au même élement.
+
 | Proprieté     | Approche impérative | Approche fonctionnelle  |
 | ------------- |:-------------------:| -----------------------:|
 | L'objectif du programmeur      | Comment executer les tâches (algorithmes) et comment suivre les changement d'état       | Savoir l'information dont on a besoin et les transformations requises qu'il faut appliquer                   |
 | Changement d'état | Important            |    Inéxistant                   |
 | L'ordre d'execution     | Important           |   Peu important                  |
 | Fonctionnalités principales utilisées pour le flux de données  | Boucles, conditionnels et appels de fonctions (méthodes)            |    Appels de fonctions dont des fonctions recursives                   |
-| Premier choix pour le manipulation | Les instances des structures ou des classes            |    Les fonctions qui sont utilisées comme des objets de première catégorie et les collections de données                   |
-
-
-
+| Premier choix pour la manipulation | Les instances des structures ou des classes            |    Les fonctions qui sont utilisées comme des objets de première catégorie et les collections de données                   |
 
 
 ## Concepts de base
