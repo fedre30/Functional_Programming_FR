@@ -27,6 +27,36 @@ Voici un tableau qui résume les ddiférences des deux approches face au même �
 
 ### Les fonctions pures 
 
+Une fonction pure est une fonction qui a comme résultat une valeur qui est l'ensemble de tous les paramètres qui sont passées à la fonction, autrement dit le nombre de paramètres et des valeurs qui composent le résultat doit être le même.
+
+Exemple de **fonction impure**:
+
+```
+const PI = 3.14;
+
+function calculateArea(radius) {
+  return radius * radius * PI;
+}
+
+calculateArea(10); // returns 314.0
+```
+
+Le résultat est le produit du radius et du PI grec, or le PI grec n'est pas un paramètre, mais un élement externe à la fonction, ce qui rend cette fonction impure car elle n'est pas suffisante d'elle-même.
+
+Voici le même exemple mais cette fois-ci avec une **fonction pure**
+
+```const PI = 3.14;
+
+function calculateArea(radius, pi) {
+  return radius * radius * pi;
+}
+
+calculateArea(10, PI); // returns 314.0
+```
+
+PI est maintenant un paramètre, donc le nombre de valeurs qui composent le résultat et le nombre de paramètre est bien le même.
+
+
 ### Les fonctions de premier niveau
 
 ### Flux de données
@@ -38,5 +68,7 @@ Voici un tableau qui résume les ddiférences des deux approches face au même �
 ### Le "garbage collection" 
 
 ## L'observable
+
+### Définition
 
 ### Redux : un exemple d'observable
