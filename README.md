@@ -10,13 +10,12 @@ Documentation sur la programmation fonctionnelle et l'Observable en Javascript
 
 | Proprieté     | Approche impérative | Approche fonctionnelle  |
 | ------------- |:-------------------:| -----------------------:|
-| L'objectif du programmeur      | Comment executer les tâches (algorithmes) et comment suivre les changement d'état       | $1600                   |
-| col 2 is      | centered            |   $12                   |
-| zebra stripes | are neat            |    $1                   |
-| zebra stripes | are neat            |    $1                   |
-| zebra stripes | are neat            |    $1                   |
-| zebra stripes | are neat            |    $1                   |
-| zebra stripes | are neat            |    $1                   |
+| L'objectif du programmeur      | Comment executer les tâches (algorithmes) et comment suivre les changement d'état       | Savoir l'information dont on a besoin et les transformations requises qu'il faut appliquer                   |
+| Changement d'état | Important            |    Inéxistant                   |
+| L'ordre d'execution     | Important           |   Peu important                  |
+| Fonctionnalités principales utilisées pour le flux de données  | Boucles, conditionnels et appels de fonctions (méthodes)            |    Appels de fonctions dont des fonctions recursives                   |
+| Premier choix pour le manipulation | Les instances des structures ou des classes            |    Les fonctions qui sont utilisées comme des objets de première catégorie et les collections de données                   |
+
 
 
 
