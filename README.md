@@ -66,6 +66,118 @@ Les fonctions de premier ordre sont des fonctions qui peuvent:
 
 Les fonctions introduites en ES6 **Map**, **Filter** et **Reduce** sont des bons exemples de fonctions de premier ordre.
 
+#### Map
+
+Approche impérative:
+
+```
+const people = [
+  { name: "TK", age: 26 },
+  { name: "Kaio", age: 10 },
+  { name: "Kazumi", age: 30 }
+];
+
+let peopleSentences = [];
+
+for (let i = 0; i < people.length; i++) {
+  var sentence = people[i].name + " is " + people[i].age + " years old";
+  peopleSentences.push(sentence);
+}
+
+console.log(peopleSentences); // ['TK is 26 years old', 'Kaio is 10 years old', 'Kazumi is 30 years old']
+```
+
+
+Approche déclarative ou fonctionnelle où la fonction even est le paramètre de la fonction de premier ordre **map**:
+
+```
+function makeSentence(person) {
+  return `${person.name} is ${person.age} years old`;
+}
+
+function peopleSentences(people) {
+  return people.map(makeSentence);
+}
+
+peopleSentences(people); // ['TK is 26 years old', 'Kaio is 10 years old', 'Kazumi is 30 years old']
+view raw
+```
+
+
+#### Filter
+
+Approche impérative:
+
+```
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let evenNumbers = [];
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 2 == 0) {
+    evenNumbers.push(numbers[i]);
+  }
+}
+
+console.log(evenNumbers); // (6) [0, 2, 4, 6, 8, 10]
+```
+
+
+Approche déclarative ou fonctionnelle où la fonction even est le paramètre de la fonction de premier ordre **filter**:
+
+```
+function even(number) {
+  return number % 2 == 0;
+}
+
+let listOfNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+listOfNumbers.filter(even); // [0, 2, 4, 6, 8, 10]
+
+```
+
+#### Reduce
+
+Approche impérative:
+
+```
+
+const orders = [
+  { productTitle: "Product 1", amount: 10 },
+  { productTitle: "Product 2", amount: 30 },
+  { productTitle: "Product 3", amount: 20 },
+  { productTitle: "Product 4", amount: 60 }
+];
+
+let totalAmount = 0;
+
+for (let i = 0; i < orders.length; i++) {
+  totalAmount += orders[i].amount;
+}
+
+console.log(totalAmount); // 120
+```
+
+
+Approche déclarative ou fonctionnelle où la fonction even est le paramètre de la fonction de premier ordre **reduce**:
+
+```
+
+let shoppingCart = [
+  { productTitle: "Product 1", amount: 10 },
+  { productTitle: "Product 2", amount: 30 },
+  { productTitle: "Product 3", amount: 20 },
+  { productTitle: "Product 4", amount: 60 }
+];
+
+const sumAmount = (currentTotalAmount, order) => currentTotalAmount + order.amount;
+
+function getTotalAmount(shoppingCart) {
+  return shoppingCart.reduce(sumAmount, 0);
+}
+
+getTotalAmount(shoppingCart); // 120
+
+```
+
 ### Flux de données
 
 ### L'immutabilité
@@ -82,6 +194,6 @@ Les fonctions introduites en ES6 **Map**, **Filter** et **Reduce** sont des bons
 
 ### Réferences
 
-[Functional programming principles in Javascript](https://medium.freecodecamp.org/functional-programming-principles-in-javascript-1b8fc6c3563f)
-[An intro to Functional Programming in JavaScript and React](https://medium.com/@agm1984/an-overview-of-functional-programming-in-javascript-and-react-part-one-10d75b509e9e)
-[Javascript Allongé](https://leanpub.com/javascriptallongesix/read)
+- [Functional programming principles in Javascript](https://medium.freecodecamp.org/functional-programming-principles-in-javascript-1b8fc6c3563f)
+- [An intro to Functional Programming in JavaScript and React](https://medium.com/@agm1984/an-overview-of-functional-programming-in-javascript-and-react-part-one-10d75b509e9e)
+- [Javascript Allongé](https://leanpub.com/javascriptallongesix/read)
