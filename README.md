@@ -188,7 +188,7 @@ getTotalAmount(shoppingCart); // 120
 
 ### La transparence réferentielle
 
-[](https://cdn-images-1.medium.com/max/1600/1*Drz5Lwh2WtLcZdrxXg7JTQ.gif)
+[!image](https://cdn-images-1.medium.com/max/1600/1*Drz5Lwh2WtLcZdrxXg7JTQ.gif)
 
 ### Le "garbage collection" 
 
