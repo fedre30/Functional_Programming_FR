@@ -183,7 +183,7 @@ getTotalAmount(shoppingCart); // 120
 La programmation fonctionnelle reactive traite les données d'un façon très formalisée, presque mathématique.
 On peut resumer cela en deux expressions, à savoir:
 - "On écoute un évenement, on déclenche une action"
-- "Une action est déjà en cours, on la cible vers quelque chose"
+- "Une action est déjà en cours, on la rédirige vers quelque chose"
 
 Autrement dit la programmation fonctionnelle consiste à recuperer des données ou à les manipuler mais étape par étape, de façon systémique.
 Ainsi tout élement dans la programmation fonctionnelle a un contexte *temporel* et *local*.
@@ -205,7 +205,10 @@ Ainsi les données ne sont jamais modifiées directement, mais on modifie l'inst
 
 ### La transparence réferentielle
 
-
+En Javascript, tout est un objet, même les fonctions sont des objets.
+Mais le fonctions sont des *citoyens de première classe*, c'est-à-dire que Javascript execute à partir de la première ligne jusqu'à la dernière en essayant d'executer toutes les fonctions le plus vite possible.
+Nénanmoins, chaque fonction est executée une à la fois en suivant un certain ordre (voir chapitre *Flux de données*).
+Pour une question de praticité, il vaut mieux de voir les fonctions comme des containeurs où se passe tout parce qu'ils sont un début et une fin, autrement dit elles sont *unidirectionnelles* (comme le tube qu'on a évoqué auparavant).
 
 ![](https://cdn-images-1.medium.com/max/1600/1*Drz5Lwh2WtLcZdrxXg7JTQ.gif)
 
