@@ -180,13 +180,32 @@ getTotalAmount(shoppingCart); // 120
 
 ### Flux de données
 
+La programmation fonctionnelle reactive traite les données d'un façon très formalisée, presque mathématique.
+On peut resumer cela en deux expressions, à savoir:
+- "On écoute un évenement, on déclenche une action"
+- "Une action est déjà en cours, on la cible vers quelque chose"
 
+Autrement dit la programmation fonctionnelle consiste à recuperer des données ou à les manipuler mais étape par étape, de façon systémique.
+Ainsi tout élement dans la programmation fonctionnelle a un contexte *temporel* et *local*.
 
+Ceci est important à retenir parce que le flux de données va des deux sens: serveur -> client et client -> serveur, mais pas sur le même canal.
+
+Il faut imaginer les données comme un ensembles hydrique composés par diférrents tubes (*sinks*).
+Chaque tube est unidirectionnel car le fluide peut suivre une seule direction, mais dans un autre tube connecté, le fluide suit la direction opposée.
 
 
 ### L'immutabilité
 
+Le but de la programmation fonctionnelle est de rendre l'état (*State*) immuable une fois qu'il a été crée, ainsi si on veut changer des données il faut créer un objet avec les nouvelles valeurs.
+Par exemple, la fonction **map** permet d'itérer sur un tableau en créant une nouvelle instance du tableau, autrement dit le tableau initiale ne peut pas être changé.
+En général, la recursion permet de garder les variables immuables et intouchables. 
+
+Ainsi les données ne sont jamais modifiées directement, mais on modifie l'instance ou la réference de la données (voir prochain chapitre *La transparence réferentielle*).
+
+
 ### La transparence réferentielle
+
+
 
 ![](https://cdn-images-1.medium.com/max/1600/1*Drz5Lwh2WtLcZdrxXg7JTQ.gif)
 
