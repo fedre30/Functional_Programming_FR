@@ -180,9 +180,15 @@ getTotalAmount(shoppingCart); // 120
 
 ### Flux de données
 
+
+
+
+
 ### L'immutabilité
 
 ### La transparence réferentielle
+
+[](https://cdn-images-1.medium.com/max/1600/1*Drz5Lwh2WtLcZdrxXg7JTQ.gif)
 
 ### Le "garbage collection" 
 
@@ -197,3 +203,4 @@ getTotalAmount(shoppingCart); // 120
 - [Functional programming principles in Javascript](https://medium.freecodecamp.org/functional-programming-principles-in-javascript-1b8fc6c3563f)
 - [An intro to Functional Programming in JavaScript and React](https://medium.com/@agm1984/an-overview-of-functional-programming-in-javascript-and-react-part-one-10d75b509e9e)
 - [Javascript Allongé](https://leanpub.com/javascriptallongesix/read)
+- [The Observer pattern in Javascript](http://www.thedevnotebook.com/2017/08/the-observer-pattern-in-javascript.html)
