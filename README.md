@@ -79,3 +79,9 @@ Les fonctions introduites en ES6 **Map**, **Filter** et **Reduce** sont des bons
 ### Définition
 
 ### Redux : un exemple d'observable
+
+### Réferences
+
+[Functional programming principles in Javascript](https://medium.freecodecamp.org/functional-programming-principles-in-javascript-1b8fc6c3563f)
+[An intro to Functional Programming in JavaScript and React](https://medium.com/@agm1984/an-overview-of-functional-programming-in-javascript-and-react-part-one-10d75b509e9e)
+[Javascript Allongé](https://leanpub.com/javascriptallongesix/read)
