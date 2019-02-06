@@ -180,7 +180,7 @@ getTotalAmount(shoppingCart); // 120
 
 ### Flux de données
 
-La programmation fonctionnelle reactive traite les données d'un façon très formalisée, presque mathématique.
+La programmation fonctionnelle (reactive aussi) traite les données d'un façon très formalisée, presque mathématique.
 On peut resumer cela en deux expressions, à savoir:
 - "On écoute un évenement, on déclenche une action"
 - "Une action est déjà en cours, on la rédirige vers quelque chose"
@@ -190,7 +190,7 @@ Ainsi tout élement dans la programmation fonctionnelle a un contexte *temporel*
 
 Ceci est important à retenir parce que le flux de données va des deux sens: serveur -> client et client -> serveur, mais pas sur le même canal.
 
-Il faut imaginer les données comme un ensembles hydrique composés par diférrents tubes (*sinks*).
+Il faut imaginer les données comme un ensembles hydrique composés par différents tubes (*sinks*).
 Chaque tube est unidirectionnel car le fluide peut suivre une seule direction, mais dans un autre tube connecté, le fluide suit la direction opposée.
 
 
