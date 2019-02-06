@@ -214,6 +214,10 @@ Pour une question de praticité, il vaut mieux de voir les fonctions comme des c
 
 ### Le "garbage collection" 
 
+## L'observable
+
+### Redux: un exemple d'Observable
+
 ## La programmation fonctionnelle réactive
 
 ### Cycle.js
