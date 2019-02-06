@@ -214,13 +214,63 @@ Pour une question de praticité, il vaut mieux de voir les fonctions comme des c
 
 ### Le "garbage collection" 
 
-## L'observable
+## La programmation fonctionnelle réactive
 
-### Définition
+### Cycle.js
 
-### Redux : un exemple d'observable
+Cycle.js est un framework fondé sur la [**programmation reactive**](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) et crée par André Staltz.
 
-### Réferences
+[Documentation officielle](https://cycle.js.org)
+
+[Bon Tutoriel](https://egghead.io/courses/cycle-js-fundamentals)
+
+Exemple:
+
+```
+
+// FUNCTION MAIN TO INITIALIZE
+function main() {
+  return {
+    DOM:  xs.periodic(1000)
+      .fold(prev => prev + 1, 0)
+      .map(i => `Seconds elapsed: ${i}`),
+
+    log: xs.periodic(2000)
+      .fold(prev => prev + 1, 0)
+  }
+
+
+}
+
+// DRIVERS
+
+function domDriver(text$) {
+  text$.subscribe({
+    next: str => {
+      const el = document.querySelector('#app');
+      el.textContent = str;
+    }
+  })
+}
+
+function logDriver(msg$) {
+  msg$.subscribe({
+    next: msg => {
+      console.log(msg)}
+  })
+}
+
+// CONNECTION TO MAIN
+
+const sink = main();
+domDriver(sink);
+logDriver(sink);
+
+```
+
+
+
+## Réferences
 
 - [Functional programming principles in Javascript](https://medium.freecodecamp.org/functional-programming-principles-in-javascript-1b8fc6c3563f)
 - [An intro to Functional Programming in JavaScript and React](https://medium.com/@agm1984/an-overview-of-functional-programming-in-javascript-and-react-part-one-10d75b509e9e)
